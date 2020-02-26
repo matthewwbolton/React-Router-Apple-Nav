@@ -5,10 +5,11 @@ import appleData from '../appleData';
 
 
 
+
 const NavWrapper = () => {
     return (
         <div>
-           {appleData.map((elem, i) => <Link key={i} to={`/${elem.name}`} >{elem.name}</Link>)}     
+           {appleData.map((elem, i) => <Link key={i} to={`/${elem.id}`} >{elem.name}</Link>)}     
         </div>
     );
 };

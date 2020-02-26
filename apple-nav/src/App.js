@@ -12,8 +12,7 @@ function App() {
         <Route path='/'>
           <NavWrapper />
         </Route>
-        <Route path='/sub/:id'>
-          <SubNav />
+          <SubNav  />
         </Route>
         
           

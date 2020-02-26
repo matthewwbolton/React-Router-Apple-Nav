@@ -7,9 +7,7 @@ const Card = (props) => {
     
     
     return (
-        <div>
-            
-        </div>
+        <div>{props.elem}</div>
     );
 };
 

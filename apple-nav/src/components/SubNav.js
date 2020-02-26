@@ -1,24 +1,22 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Card from './Card';
 import appleData from '../appleData';
 
 
 
-const SubNav = (props) => {
+const SubNav = () => {
 
     const params = useParams();
+    console.log(params)
+    const subNames = appleData.filter(elem => elem.id ===Number(params.id))
+    console.log(subNames)
 
     return (
         <div>
-       
-       {appleData.map((elem, i) => (
-           <Link key={i} to={`/${elem.name}/${elem.sub}`}>{elem.sub}</Link>
-       ))}
-       
-
-         <Card />
-        
+            {subNames[0].sub.map((elem, i) => (
+                <Card key={i} elem={elem}/>
+            ))}
         </div>
     );
 };
