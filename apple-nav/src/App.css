@@ -28,6 +28,18 @@
   color: #61dafb;
 }
 
+.NavWrapper {
+  display: flex;
+  justify-content: space-evenly;;
+  margin: 1%;
+}
+
+.SubNav{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1%;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

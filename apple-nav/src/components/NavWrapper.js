@@ -8,8 +8,10 @@ import appleData from '../appleData';
 
 const NavWrapper = () => {
     return (
-        <div>
-           {appleData.map((elem, i) => <Link key={i} to={`/${elem.id}`} >{elem.name}</Link>)}     
+        
+        <div class='NavWrapper'>
+            <Link to='/'>Apple</Link>
+           {appleData.map((elem, i) => <Link key={i} to={`/${elem.id}`}>{elem.name}</Link>)}     
         </div>
     );
 };

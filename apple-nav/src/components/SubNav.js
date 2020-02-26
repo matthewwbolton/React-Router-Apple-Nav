@@ -13,7 +13,7 @@ const SubNav = () => {
     console.log(subNames)
 
     return (
-        <div>
+        <div class='SubNav'>
             {subNames[0].sub.map((elem, i) => (
                 <Card key={i} elem={elem}/>
             ))}
